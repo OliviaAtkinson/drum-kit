@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>JavaScript Drum Kit</h1>
+        </div>
+        <div class="play">
+            <h2>Use keyboard to play drum, or click each key on the screen!</h2>
+        </div>
+        <div class="keys" id="keyLetters">
+
+
+            <div data-keycode="65" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="65" id="audio1" src="sounds/boom.wav"></audio>
+                <h3>A</h3>
+                <p>Clap</p>
+            </div>
+
+            <div data-keycode="83" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="83" id= "audio2" src="sounds/hihat.wav"></audio>
+                <h3>S</h3>
+                <p>Hihat</p>
+                
+            </div>
+
+            <div data-keycode="68" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="68" id= "audio3" src="sounds/kick.wav"></audio>
+                <h3>D</h3>
+                <p>Kick</p>
+                
+            </div>
+
+            <div data-keycode="70" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="70" id= "audio4" src="sounds/openhat.wav"></audio>
+                <h3>F</h3>
+                <p>Openhat</p>
+                
+            </div>
+
+            <div data-keycode="71" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="71" id= "audio5" src="sounds/boom.wav"></audio>
+                <h3>G</h3>
+                <p>Boom</p>
+              
+            </div>
+
+            <div data-keycode="72" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="72" id= "audio6" src="sounds/ride.wav"></audio>
+                <h3>H</h3>
+                <p>Ride</p>
+                
+            </div>
+
+            <div data-keycode="74" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="74" id= "audio7" src="sounds/snare.wav"></audio>
+                <h3>J</h3>
+                <p>Snare</p>
+                
+            </div>
+
+            <div data-keycode="75" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="75" id= "audio8" src="sounds/tom.wav"></audio>
+                <h3>K</h3>
+                <p>Tom</p>
+                
+            </div>
+
+            <div data-keycode="76" class="key" onclick="playOnClick(this)">
+                <audio data-keycode="76" id= "audio9" src="sounds/tink.wav"></audio>
+                <h3>L</h3>
+                <p>Tink</p>
+                
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
